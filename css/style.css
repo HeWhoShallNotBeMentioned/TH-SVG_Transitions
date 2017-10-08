@@ -49,9 +49,11 @@ svg {
 /* --------------------------
   GEAR
 --------------------------- */
-.gear-icon {
-  transition: transform .4s ease-out;
+.gear-icon,
+.hammer-icon,
+.heart-icon {
   transform-origin: 50% 50%;
+  transition: transform .4s ease-out;
 }
 
 .gear:hover .gear-icon {
@@ -61,8 +63,13 @@ svg {
 /* --------------------------
   HAMMER
 --------------------------- */
-
+.hammer:hover .hammer-icon {
+  transform: rotate(45deg);
+}
 
 /* --------------------------
   HEART
 --------------------------- */
+.heart:hover .heart-icon {
+  transform: scale(1.3);
+}
